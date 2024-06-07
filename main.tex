@@ -1,0 +1,122 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\renewcommand{\labelitemi}{} % Remove the bullet point
+
+% Page setup
+\geometry{a4paper, margin=1in}
+
+\hypersetup{
+    colorlinks = true,
+    allcolors = {black}
+ }
+
+% Personal information
+\newcommand{\name}{Hendrik Parik}
+\newcommand{\contact}{+37257888700, hendrik.parik@gmail.com}
+\newcommand{\linkedin}{\href{https://www.linkedin.com/in/hendrik-parik-334003200/}{Linkedin}}
+\newcommand{\thesis}{\href{https://www.springerprofessional.de/en/performance-assessment-of-the-main-metaheuristics-for-sustainabl/23753754}{Thesis}}
+\newcommand{\github}{\href{https://github.com/hendrik127}{GitHub}}
+%\newcommand{\rahvushaaling}{\href{https://rahvushaaling.ee/}{Rahvushääling}}
+\newcommand{\profile}{I'm passionate about the fields of software engineering, data science, and machine learning. Their intersection is what fascinates me the most. I have real-world experience in creating web applications for different companies and institutions, as well as teaching programming courses and the Algorithms and Data Structures course at the University of Tartu. My final thesis was on the optimization of sustainable supply chains using different metaheuristic methods. Finding eco-friendly solutions is a topic close to my heart. Presently I am a data engineer working at Solita with a main focus on machine learning solutions.
+
+}
+
+% Custom commands
+\newcommand{\cvsection}[1]{\section*{\MakeUppercase{#1}}\hrule\vspace{0.5em}}
+\newcommand{\cvitem}[2]{\textbf{#1}:\hspace{0.5em}#2}
+
+% Section titles formatting
+\titleformat{\section}
+  {\normalfont\large\bfseries}
+  {}{0pt}{}
+
+% Document
+\begin{document}
+
+% Disable page numbering
+\pagenumbering{gobble}
+
+% Header
+\begin{center}
+    {\Huge\textbf{\name}}\\
+    \vspace{0.5em}
+    \contact\\
+    \linkedin, \thesis, \github%, % \rahvushaaling
+\end{center}
+
+% Profile
+\cvsection{Profile}
+     \profile
+
+
+% Employment History
+\cvsection{Experience}
+\begin{itemize}[leftmargin=*]
+
+    \item \cvitem{Junior Data Engineer}{Solita, Jan 2024}
+    \item \cvitem{Full Stack Developer}{
+    Estonian Defense Forces, Feb 2023 -- Dec 2023}\\
+    Developing software for the Estonian Defense Forces.
+    
+    \item \cvitem{Teaching Assistant}{University of Tartu, Sep 2020 -- Dec 2022}\\
+    2020 Fall semester: Programming (Python)\\
+    2021 Spring semester: Object-Oriented Programming (Java)\\
+    2021 Fall semester: Algorithms \& Data Structures (Java)\\
+    2022 Fall semester: Programming + Algorithms \& Data Structures
+
+    \item \cvitem{Web Development Internship}{Eziil, May 2020 -- September 2020}
+    
+    
+    
+\end{itemize}
+
+% Education
+\cvsection{Education}
+\begin{itemize}[leftmargin=*]
+   
+    \item \cvitem{Computer Science BSc}{University of Tartu, Sep 2019 -- Jun 2022}
+    Grade: cum laude
+    
+    %\item \cvitem{Secondary Education}{Keila Kool, Sep 2016 -- Jun 2019} Silver medal
+\end{itemize}
+
+% Skills
+\cvsection{Technologies}
+\begin{itemize}[leftmargin=*]
+    \item React.js, Vue.js, JavaScript, TypeScript, Cypress
+    \item Python, MLflow, FastAPI, Pandas, Scikit, NumPy
+    \item Java, Spring, Spring Boot
+    \item Ubuntu, AWS, Azure, Docker, Databricks, Terraform, Ansible, PostgreSQL, MariaDB
+    \item Dart, Flutter 
+    \item C, Matlab
+\end{itemize}
+
+% Certificates
+\cvsection{Certificates}
+\begin{itemize}[leftmargin=*]
+    \item\href{https://learn.microsoft.com/en-us/users/hendrikparik-5080/credentials/3222fde6c495fb07}{Microsoft Certified: Azure Data Scientist Associate} 
+\end{itemize}
+
+
+
+% Languages
+\cvsection{Languages}
+\begin{itemize}[leftmargin=*]
+    \item Estonian (Native speaker), English (Highly proficient)
+\end{itemize}
+
+% Hobbies
+\cvsection{Hobbies}
+\begin{itemize}[leftmargin=*]
+    \item Playing music,Hiking, Meditation, Cooking, Reading, Yoga, Running
+\end{itemize}
+
+\end{document}
